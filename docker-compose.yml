@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: quizapp
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: quiz@pp123
+    ports:
+      - "6903:5432"
